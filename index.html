@@ -3,3082 +3,803 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Sea & Mount Travel offers hotels in Digha and homestays in North Bengal, including Seventh Key Homestay at Sherpa Gaon near Lava.">
 <title>Sea & Mount Travel</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7f9;color:#222;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none}
 
-/* =========================================================
-   RESET
-========================================================= */
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 12px #0002}
+.navbar{max-width:1200px;margin:auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:#075e54;white-space:nowrap}
+.logo img{width:55px;height:55px;object-fit:contain;border-radius:50%}
+.logo b{color:#d89b16}
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+nav a{color:#333;font-weight:600;font-size:14px}
+nav a:hover{color:#075e54}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+section{padding:70px 20px}
+.container{max-width:1200px;margin:auto}
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f7f9;
-    color:#222;
-    line-height:1.6;
-    overflow-x:hidden;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-a{
-    text-decoration:none;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#fff;
-    box-shadow:0 2px 12px rgba(0,0,0,.12);
-}
-
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:10px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:20px;
-    font-weight:700;
-    color:#075e54;
-    white-space:nowrap;
-}
-
-.logo img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-    border-radius:50%;
-}
-
-.logo b{
-    color:#d89b16;
-}
-
-nav{
-    display:flex;
-    gap:22px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-nav a{
-    color:#333;
-    font-weight:600;
-    font-size:15px;
-}
-
-nav a:hover{
-    color:#075e54;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero{
-    position:relative;
-    height:620px;
-    overflow:hidden;
-    background:#111;
-}
-
-.hero-slide{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    animation:heroFade 16s infinite;
-}
-
-.hero-slide:nth-child(1){
-    animation-delay:0s;
-}
-
-.hero-slide:nth-child(2){
-    animation-delay:4s;
-}
-
-.hero-slide:nth-child(3){
-    animation-delay:8s;
-}
-
-.hero-slide:nth-child(4){
-    animation-delay:12s;
-}
+/* HOME PAGE SLIDESHOW */
+.hero{position:relative;height:620px;overflow:hidden;background:#111;padding:0}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:heroFade 20s infinite}
+.hero-slide:nth-child(1){animation-delay:0s}
+.hero-slide:nth-child(2){animation-delay:4s}
+.hero-slide:nth-child(3){animation-delay:8s}
+.hero-slide:nth-child(4){animation-delay:12s}
+.hero-slide:nth-child(5){animation-delay:16s}
 
 @keyframes heroFade{
-
-    0%{
-        opacity:0;
-    }
-
-    8%{
-        opacity:1;
-    }
-
-    25%{
-        opacity:1;
-    }
-
-    33%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:0;
-    }
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.30),
-            rgba(0,0,0,.55)
-        );
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-    padding:20px;
-}
-
-.hero-content{
-    color:#fff;
-    max-width:800px;
-}
-
-.hero-content h1{
-    font-size:52px;
-    margin-bottom:15px;
-    text-shadow:0 3px 10px rgba(0,0,0,.6);
-}
-
-.hero-content p{
-    font-size:21px;
-    text-shadow:0 2px 8px rgba(0,0,0,.7);
-}
-
-
-/* =========================================================
-   COMMON SECTIONS
-========================================================= */
-
-section{
-    padding:70px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.section-title h2{
-    font-size:36px;
-    color:#075e54;
-    margin-bottom:8px;
-}
-
-.section-title p{
-    color:#666;
-}
-
-
-/* =========================================================
-   TWO LINE RED SECTION HEADINGS
-========================================================= */
-
-.red-section-heading{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.red-section-heading .top-line{
-    display:block;
-    font-size:30px;
-    font-weight:700;
-    color:#e53935;
-    line-height:1.1;
-    letter-spacing:1px;
-}
-
-.red-section-heading .bottom-line{
-    display:block;
-    font-size:38px;
-    font-weight:800;
-    color:#e53935;
-    line-height:1.05;
-    margin-top:3px;
-}
-
-
-/* =========================================================
-   INTRO
-========================================================= */
-
-.intro{
-    background:#fff;
-}
-
-.intro-text{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    font-size:18px;
-    color:#555;
-}
-
-
-/* =========================================================
-   PROPERTY SECTION
-========================================================= */
-
-.property-section{
-    background:#f5f7f9;
-}
-
-.property-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:30px;
-}
-
-.property-card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.property-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 28px rgba(0,0,0,.18);
-}
-
-.property-image{
-    height:330px;
-    position:relative;
-    overflow:hidden;
-}
-
-.property-content{
-    padding:24px;
-}
-
-.property-content h3{
-    color:#075e54;
-    font-size:25px;
-    margin-bottom:8px;
-}
-
-.property-content h4{
-    color:#d28d00;
-    margin-bottom:12px;
-}
-
-.property-content p{
-    color:#555;
-    margin-bottom:10px;
-}
-
-.location{
-    font-weight:600;
-    color:#555;
-}
-
-.property-buttons{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:18px;
-}
-
-.btn{
-    display:inline-block;
-    padding:11px 18px;
-    border-radius:8px;
-    background:#075e54;
-    color:#fff;
-    font-weight:600;
-    border:none;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#043f39;
-}
-
-.btn-whatsapp{
-    background:#25d366;
-}
-
-.btn-whatsapp:hover{
-    background:#1da851;
-}
-
-
-/* =========================================================
-   PROPERTY SLIDESHOW
-========================================================= */
-
-.pratima-card-slideshow{
-    position:relative;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#111;
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   ALL PROPERTY SLIDES
-========================================================= */
-
-.pratima-card-slide,
-.aaradhya-card-slide,
-.susanta-card-slide,
-.tashi-card-slide{
-
-    position:absolute;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    opacity:0;
-
-    transform:scale(1);
-
-}
-
-
-/* =========================================================
-   PRATIMA - 9 PHOTOS
-========================================================= */
-
-.pratima-card-slide{
-    animation:pratimaShow 18s infinite;
-}
-
-.pratima-card-slide:nth-child(1){animation-delay:0s;}
-.pratima-card-slide:nth-child(2){animation-delay:2s;}
-.pratima-card-slide:nth-child(3){animation-delay:4s;}
-.pratima-card-slide:nth-child(4){animation-delay:6s;}
-.pratima-card-slide:nth-child(5){animation-delay:8s;}
-.pratima-card-slide:nth-child(6){animation-delay:10s;}
-.pratima-card-slide:nth-child(7){animation-delay:12s;}
-.pratima-card-slide:nth-child(8){animation-delay:14s;}
-.pratima-card-slide:nth-child(9){animation-delay:16s;}
-
-
-/* =========================================================
-   AARADHYA - 15 PHOTOS
-========================================================= */
-
-.aaradhya-card-slide{
-    animation:aaradhyaShow 30s infinite;
-}
-
-.aaradhya-card-slide:nth-child(1){animation-delay:0s;}
-.aaradhya-card-slide:nth-child(2){animation-delay:2s;}
-.aaradhya-card-slide:nth-child(3){animation-delay:4s;}
-.aaradhya-card-slide:nth-child(4){animation-delay:6s;}
-.aaradhya-card-slide:nth-child(5){animation-delay:8s;}
-.aaradhya-card-slide:nth-child(6){animation-delay:10s;}
-.aaradhya-card-slide:nth-child(7){animation-delay:12s;}
-.aaradhya-card-slide:nth-child(8){animation-delay:14s;}
-.aaradhya-card-slide:nth-child(9){animation-delay:16s;}
-.aaradhya-card-slide:nth-child(10){animation-delay:18s;}
-.aaradhya-card-slide:nth-child(11){animation-delay:20s;}
-.aaradhya-card-slide:nth-child(12){animation-delay:22s;}
-.aaradhya-card-slide:nth-child(13){animation-delay:24s;}
-.aaradhya-card-slide:nth-child(14){animation-delay:26s;}
-.aaradhya-card-slide:nth-child(15){animation-delay:28s;}
-
-
-/* =========================================================
-   SUSANTA - 14 PHOTOS
-========================================================= */
-
-.susanta-card-slide{
-    animation:susantaShow 28s infinite;
-}
-
-.susanta-card-slide:nth-child(1){animation-delay:0s;}
-.susanta-card-slide:nth-child(2){animation-delay:2s;}
-.susanta-card-slide:nth-child(3){animation-delay:4s;}
-.susanta-card-slide:nth-child(4){animation-delay:6s;}
-.susanta-card-slide:nth-child(5){animation-delay:8s;}
-.susanta-card-slide:nth-child(6){animation-delay:10s;}
-.susanta-card-slide:nth-child(7){animation-delay:12s;}
-.susanta-card-slide:nth-child(8){animation-delay:14s;}
-.susanta-card-slide:nth-child(9){animation-delay:16s;}
-.susanta-card-slide:nth-child(10){animation-delay:18s;}
-.susanta-card-slide:nth-child(11){animation-delay:20s;}
-.susanta-card-slide:nth-child(12){animation-delay:22s;}
-.susanta-card-slide:nth-child(13){animation-delay:24s;}
-.susanta-card-slide:nth-child(14){animation-delay:26s;}
-
-
-/* =========================================================
-   TASHI - 10 PHOTOS
-========================================================= */
-
-.tashi-card-slide{
-    animation:tashiShow 20s infinite;
-}
-
-.tashi-card-slide:nth-child(1){animation-delay:0s;}
-.tashi-card-slide:nth-child(2){animation-delay:2s;}
-.tashi-card-slide:nth-child(3){animation-delay:4s;}
-.tashi-card-slide:nth-child(4){animation-delay:6s;}
-.tashi-card-slide:nth-child(5){animation-delay:8s;}
-.tashi-card-slide:nth-child(6){animation-delay:10s;}
-.tashi-card-slide:nth-child(7){animation-delay:12s;}
-.tashi-card-slide:nth-child(8){animation-delay:14s;}
-.tashi-card-slide:nth-child(9){animation-delay:16s;}
-.tashi-card-slide:nth-child(10){animation-delay:18s;}
-
-
-/* =========================================================
-   ANIMATION
-========================================================= */
-
-@keyframes pratimaShow{
-
-    0%{
-        opacity:0;
-        transform:scale(1);
-    }
-
-    8%{
-        opacity:1;
-        transform:scale(1.02);
-    }
-
-    75%{
-        opacity:1;
-        transform:scale(1.10);
-    }
-
-    92%{
-        opacity:0;
-        transform:scale(1.13);
-    }
-
-    100%{
-        opacity:0;
-        transform:scale(1);
-    }
-}
-
-@keyframes aaradhyaShow{
-
-    0%{
-        opacity:0;
-        transform:scale(1);
-    }
-
-    8%{
-        opacity:1;
-        transform:scale(1.02);
-    }
-
-    75%{
-        opacity:1;
-        transform:scale(1.10);
-    }
-
-    92%{
-        opacity:0;
-        transform:scale(1.13);
-    }
-
-    100%{
-        opacity:0;
-        transform:scale(1);
-    }
-}
-
-@keyframes susantaShow{
-
-    0%{
-        opacity:0;
-        transform:scale(1);
-    }
-
-    8%{
-        opacity:1;
-        transform:scale(1.02);
-    }
-
-    75%{
-        opacity:1;
-        transform:scale(1.10);
-    }
-
-    92%{
-        opacity:0;
-        transform:scale(1.13);
-    }
-
-    100%{
-        opacity:0;
-        transform:scale(1);
-    }
-}
-
-@keyframes tashiShow{
-
-    0%{
-        opacity:0;
-        transform:scale(1);
-    }
-
-    8%{
-        opacity:1;
-        transform:scale(1.02);
-    }
-
-    75%{
-        opacity:1;
-        transform:scale(1.10);
-    }
-
-    92%{
-        opacity:0;
-        transform:scale(1.13);
-    }
-
-    100%{
-        opacity:0;
-        transform:scale(1);
-    }
-}
-
-
-/* =========================================================
-   GALLERY SECTION
-========================================================= */
-
-.gallery-section{
-    background:#fff;
-}
-
-.gallery-home{
-    display:block;
-}
-
-
-/* =========================================================
-   ROOM PHOTO HEADING
-========================================================= */
-
-.room-photo-heading{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.room-photo-heading .room-line{
-    display:block;
-    color:#075e54;
-    font-size:34px;
-    font-weight:700;
-    line-height:1.05;
-}
-
-.room-photo-heading .photo-line{
-    display:block;
-    color:#075e54;
-    font-size:42px;
-    font-weight:800;
-    line-height:1;
-    margin-top:2px;
-}
-
-
-/* =========================================================
-   GALLERY COVER
-========================================================= */
-
-.gallery-cover-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
-
-.gallery-cover{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,.12);
-
-    cursor:pointer;
-    transition:.3s;
-}
-
-.gallery-cover:hover{
-    transform:translateY(-5px);
-}
-
-.gallery-cover img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-}
-
-.gallery-cover-content{
-    padding:20px;
-    text-align:center;
-}
-
-.gallery-cover-content h3{
-    color:#075e54;
-    margin-bottom:5px;
-}
-
-.gallery-cover-content p{
-    color:#777;
-}
-
-
-/* =========================================================
-   PROPERTY GALLERY
-========================================================= */
-
-.property-gallery{
-    display:none;
-}
-
-.property-gallery.active{
-    display:block;
-}
-
-.property-gallery h2{
-    text-align:center;
-    color:#075e54;
-    font-size:32px;
-    margin:20px 0 30px;
-}
-
-.back-gallery-btn{
-    display:block;
-    margin:0 auto 20px;
-
-    padding:11px 20px;
-
-    border:none;
-    border-radius:8px;
-
-    background:#075e54;
-    color:#fff;
-
-    cursor:pointer;
-
-    font-size:15px;
-    font-weight:600;
-}
-
-.back-gallery-btn:hover{
-    background:#043f39;
-}
-
-.photo-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.property-photo{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    box-shadow:
-        0 3px 12px rgba(0,0,0,.15);
-}
-
-.property-photo:hover{
-    transform:scale(1.03);
-}
-
-
-/* =========================================================
-   GALLERY NAVIGATION
-========================================================= */
-
-.gallery-navigation{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:30px;
-}
-
-.gallery-navigation button{
-    padding:12px 22px;
-
-    border:none;
-    border-radius:8px;
-
-    background:#075e54;
-    color:#fff;
-
-    font-weight:600;
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   LIGHTBOX
-========================================================= */
-
-.photo-lightbox{
-    position:fixed;
-    inset:0;
-
-    background:rgba(0,0,0,.92);
-
-    z-index:5000;
-
-    display:none;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:30px;
-}
-
-.photo-lightbox.active{
-    display:flex;
-}
-
-.lightbox-content{
-    position:relative;
-    max-width:1000px;
-    width:100%;
-    text-align:center;
-}
-
-.lightbox-content img{
-    max-width:90vw;
-    max-height:75vh;
-
-    margin:auto;
-
-    object-fit:contain;
-
-    border-radius:8px;
-}
-
-.lightbox-close{
-    position:absolute;
-
-    top:-50px;
-    right:0;
-
-    color:#fff;
-
-    font-size:35px;
-
-    background:none;
-    border:none;
-
-    cursor:pointer;
-}
-
-.lightbox-nav{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:20px;
-}
-
-.lightbox-nav button{
-    padding:12px 22px;
-
-    border:none;
-    border-radius:8px;
-
-    background:#fff;
-    color:#222;
-
-    font-weight:600;
-    cursor:pointer;
-}
-
-
-/* =========================================================
-   BOOKING
-========================================================= */
-
-.booking{
-    background:#075e54;
-    color:#fff;
-    text-align:center;
-}
-
-.booking h2{
-    font-size:35px;
-    margin-bottom:12px;
-}
-
-.booking p{
-    max-width:700px;
-    margin:0 auto 25px;
-    font-size:18px;
-}
-
-.booking-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.booking .btn{
-    background:#fff;
-    color:#075e54;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact{
-    background:#f5f7f9;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.contact-box{
-    background:#fff;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    box-shadow:
-        0 4px 15px rgba(0,0,0,.08);
-}
-
-.contact-box h3{
-    color:#075e54;
-    margin-bottom:10px;
-}
-
-.contact-box p{
-    color:#555;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-    background:#102a2a;
-    color:#fff;
-
-    text-align:center;
-
-    padding:25px 20px;
-}
-
-footer p{
-    margin:5px 0;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
+ 0%{opacity:0}
+ 8%{opacity:1}
+ 25%{opacity:1}
+ 33%{opacity:0}
+ 100%{opacity:0}
+}
+
+/* SECTION HEADINGS */
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:36px;color:#075e54;margin-bottom:8px}
+.section-title p{color:#666}
+
+.property-section{background:#f5f7f9}
+.red-section-heading{text-align:center;margin-bottom:40px}
+.red-section-heading .top-line{display:block;font-size:30px;font-weight:700;color:#e53935;line-height:1.1;letter-spacing:1px}
+.red-section-heading .bottom-line{display:block;font-size:38px;font-weight:800;color:#e53935;line-height:1.05;margin-top:3px}
+
+/* PROPERTY CARDS */
+.property-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.property-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #0002;transition:.3s}
+.property-card:hover{transform:translateY(-5px);box-shadow:0 10px 28px #0003}
+
+.property-image{height:330px;position:relative;overflow:hidden}
+.slideshow{position:relative;width:100%;height:100%;overflow:hidden;background:#111;cursor:pointer}
+.card-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:cardFade var(--duration,18s) infinite}
+
+@keyframes cardFade{
+ 0%{opacity:0;transform:scale(1)}
+ 8%{opacity:1;transform:scale(1.02)}
+ 75%{opacity:1;transform:scale(1.1)}
+ 92%{opacity:0;transform:scale(1.13)}
+ 100%{opacity:0;transform:scale(1)}
+}
+
+.property-content{padding:24px}
+.property-content h3{color:#075e54;font-size:25px;margin-bottom:8px}
+.property-content h4{color:#d28d00;margin-bottom:12px}
+.property-content p{color:#555;margin-bottom:10px}
+.location{font-weight:600;color:#555}
+
+.property-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;background:#075e54;color:#fff;font-weight:600;border:none;cursor:pointer;transition:.3s;font-family:inherit;font-size:14px}
+.btn:hover{background:#043f39}
+.btn-whatsapp{background:#25d366}
+.btn-whatsapp:hover{background:#1da851}
+
+/* ROOM PHOTO GALLERY */
+.gallery-section{background:#fff}
+.room-photo-heading{text-align:center;margin-bottom:40px}
+.room-photo-heading .room-line{display:block;color:#075e54;font-size:34px;font-weight:700;line-height:1.05}
+.room-photo-heading .photo-line{display:block;color:#075e54;font-size:42px;font-weight:800;line-height:1;margin-top:2px}
+
+.gallery-home{display:block}
+.gallery-cover-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.gallery-cover{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #0002;cursor:pointer;transition:.3s}
+.gallery-cover:hover{transform:translateY(-5px)}
+.gallery-cover img{width:100%;height:280px;object-fit:cover}
+.gallery-cover-content{padding:20px;text-align:center}
+.gallery-cover-content h3{color:#075e54;margin-bottom:5px}
+.gallery-cover-content p{color:#777}
+
+.property-gallery{display:none}
+.property-gallery.active{display:block}
+.property-gallery h2{text-align:center;color:#075e54;font-size:32px;margin:20px 0 30px}
+.back-gallery-btn{display:block;margin:0 auto 20px;padding:11px 20px;border:none;border-radius:8px;background:#075e54;color:#fff;cursor:pointer;font-size:15px;font-weight:600}
+
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.property-photo{width:100%;height:260px;object-fit:cover;border-radius:12px;cursor:pointer;transition:.3s;box-shadow:0 3px 12px #0002}
+.property-photo:hover{transform:scale(1.03)}
+
+.gallery-navigation,.lightbox-nav{display:flex;justify-content:center;gap:15px;margin-top:30px}
+.gallery-navigation button{padding:12px 22px;border:none;border-radius:8px;background:#075e54;color:#fff;font-weight:600;cursor:pointer}
+
+/* PHOTO LIGHTBOX */
+.photo-lightbox{position:fixed;inset:0;background:#000e;z-index:5000;display:none;align-items:center;justify-content:center;padding:30px}
+.photo-lightbox.active{display:flex}
+.lightbox-content{position:relative;max-width:1000px;width:100%;text-align:center}
+.lightbox-content img{max-width:90vw;max-height:75vh;margin:auto;object-fit:contain;border-radius:8px}
+.lightbox-close{position:absolute;top:-50px;right:0;color:#fff;font-size:35px;background:none;border:none;cursor:pointer}
+.lightbox-nav{margin-top:20px}
+.lightbox-nav button{padding:12px 22px;border:none;border-radius:8px;background:#fff;color:#222;font-weight:600;cursor:pointer}
+
+/* BOOKING */
+.booking{background:#075e54;color:#fff;text-align:center}
+.booking h2{font-size:35px;margin-bottom:12px}
+.booking p{max-width:700px;margin:0 auto 25px;font-size:18px}
+.booking-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.booking .btn{background:#fff;color:#075e54}
+
+/* CONTACT */
+.contact{background:#f5f7f9}
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.contact-box{background:#fff;padding:25px;border-radius:15px;text-align:center;box-shadow:0 4px 15px #0001}
+.contact-box h3{color:#075e54;margin-bottom:10px}
+.contact-box p{color:#555}
+
+footer{background:#102a2a;color:#fff;text-align:center;padding:25px 20px}
+footer p{margin:5px 0}
+
+.mobile-contact-buttons{display:none}
+
+/* MOBILE RESPONSIVE */
 @media(max-width:768px){
+ section{padding:50px 14px}
+ .navbar{padding:7px 10px;flex-direction:column;gap:6px}
+ .logo{font-size:16px}
+ .logo img{width:44px;height:44px}
+ nav{gap:10px}
+ nav a{font-size:12px}
 
-    body{
-        overflow-x:hidden;
-    }
+ .hero{height:430px}
 
-    section{
-        padding:50px 14px;
-    }
+ .red-section-heading{margin-bottom:28px}
+ .red-section-heading .top-line{font-size:24px}
+ .red-section-heading .bottom-line{font-size:34px}
 
-    .container{
-        width:100%;
-        max-width:100%;
-    }
+ .property-grid{grid-template-columns:1fr;gap:22px}
+ .property-card{width:100%;border-radius:16px}
+ .property-image{height:245px}
+ .property-content{padding:18px}
+ .property-content h3{font-size:23px;line-height:1.25}
+ .property-content h4{font-size:17px}
+ .property-content p{font-size:15px;line-height:1.55}
+ .property-buttons{gap:8px}
+ .property-buttons .btn{padding:10px 14px;font-size:13px}
 
+ .room-photo-heading{margin-bottom:28px}
+ .room-photo-heading .room-line{font-size:28px}
+ .room-photo-heading .photo-line{font-size:36px}
 
-    /* HEADER */
+ .gallery-cover-grid{grid-template-columns:1fr;gap:18px}
+ .gallery-cover img{height:220px}
+ .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .property-photo{height:155px;border-radius:9px}
 
-    .navbar{
-        padding:7px 10px;
-        flex-direction:column;
-        gap:6px;
-    }
+ .gallery-navigation{gap:8px}
+ .gallery-navigation button{padding:10px 15px;font-size:14px}
+ .photo-lightbox{padding:15px}
+ .lightbox-content img{max-width:96vw;max-height:72vh}
+ .lightbox-close{top:-42px;font-size:32px}
+ .lightbox-nav button{padding:10px 15px;font-size:14px}
 
-    .logo{
-        font-size:16px;
-    }
+ .booking h2{font-size:29px}
+ .booking p{font-size:15px}
+ .contact-grid{grid-template-columns:1fr;gap:15px}
 
-    .logo img{
-        width:44px;
-        height:44px;
-    }
+ .mobile-contact-buttons{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  width:100%;height:82px;
+  z-index:99999;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 24px;
+  pointer-events:none;
+  background:transparent
+ }
 
-    nav{
-        gap:10px;
-    }
+ .floating-whatsapp,.floating-call{
+  width:62px;height:62px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  box-shadow:0 5px 18px #0005;
+  pointer-events:auto;
+  transition:.2s;
+  border:2px solid #ffffff40
+ }
 
-    nav a{
-        font-size:12px;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        height:430px;
-    }
-
-    .hero-content{
-        padding:15px;
-    }
-
-    .hero-content h1{
-        font-size:30px;
-        line-height:1.15;
-    }
-
-    .hero-content p{
-        font-size:17px;
-        line-height:1.5;
-    }
-
-
-    /* RED HEADINGS */
-
-    .red-section-heading{
-        margin-bottom:28px;
-    }
-
-    .red-section-heading .top-line{
-        font-size:24px;
-    }
-
-    .red-section-heading .bottom-line{
-        font-size:34px;
-    }
-
-
-    /* PROPERTY */
-
-    .property-grid{
-        grid-template-columns:1fr;
-        gap:22px;
-    }
-
-    .property-card{
-        width:100%;
-        border-radius:16px;
-    }
-
-    .property-image{
-        height:245px;
-    }
-
-    .property-content{
-        padding:18px;
-    }
-
-    .property-content h3{
-        font-size:23px;
-        line-height:1.25;
-    }
-
-    .property-content h4{
-        font-size:17px;
-    }
-
-    .property-content p{
-        font-size:15px;
-        line-height:1.55;
-    }
-
-    .property-buttons{
-        gap:8px;
-    }
-
-    .property-buttons .btn{
-        padding:10px 14px;
-        font-size:14px;
-    }
-
-
-    /* ROOM PHOTO */
-
-    .room-photo-heading{
-        margin-bottom:28px;
-    }
-
-    .room-photo-heading .room-line{
-        font-size:28px;
-    }
-
-    .room-photo-heading .photo-line{
-        font-size:36px;
-    }
-
-
-    /* GALLERY COVER */
-
-    .gallery-cover-grid{
-        grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .gallery-cover img{
-        height:220px;
-    }
-
-
-    /* PHOTOS */
-
-    .photo-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:8px;
-    }
-
-    .property-photo{
-        height:155px;
-        border-radius:9px;
-    }
-
-
-    /* GALLERY BUTTON */
-
-    .gallery-navigation{
-        gap:8px;
-    }
-
-    .gallery-navigation button{
-        padding:10px 15px;
-        font-size:14px;
-    }
-
-
-    /* LIGHTBOX */
-
-    .photo-lightbox{
-        padding:15px;
-    }
-
-    .lightbox-content img{
-        max-width:96vw;
-        max-height:72vh;
-    }
-
-    .lightbox-close{
-        top:-42px;
-        right:0;
-        font-size:32px;
-    }
-
-    .lightbox-nav button{
-        padding:10px 15px;
-        font-size:14px;
-    }
-
-
-    /* BOOKING */
-
-    .booking h2{
-        font-size:29px;
-    }
-
-    .booking p{
-        font-size:15px;
-    }
-
-
-    /* CONTACT */
-
-    .contact-grid{
-        grid-template-columns:1fr;
-        gap:15px;
-    }
-
+ .floating-whatsapp{background:#16d45a}
+ .floating-call{background:#087ea4;font-size:32px}
+ .floating-whatsapp:active,.floating-call:active{transform:scale(.88)}
+ footer{padding-bottom:105px}
 }
-
-
-/* =========================================================
-   MOBILE FIXED WHATSAPP + CALL
-========================================================= */
-
-.mobile-contact-buttons{
-    display:none;
-}
-
-@media(max-width:768px){
-
-    .mobile-contact-buttons{
-
-        position:fixed;
-
-        left:0;
-        right:0;
-        bottom:0;
-
-        width:100%;
-        height:82px;
-
-        z-index:99999;
-
-        display:flex;
-
-        align-items:center;
-
-        justify-content:space-between;
-
-        padding:10px 24px;
-
-        pointer-events:none;
-
-        background:transparent;
-    }
-
-
-    /* LEFT - WHATSAPP */
-
-    .floating-whatsapp{
-
-        width:62px;
-        height:62px;
-
-        border-radius:50%;
-
-        background:#16d45a;
-
-        display:flex;
-
-        align-items:center;
-        justify-content:center;
-
-        color:#fff;
-
-        box-shadow:
-            0 5px 18px rgba(0,0,0,.30);
-
-        pointer-events:auto;
-
-        transition:.2s;
-
-        border:2px solid rgba(255,255,255,.25);
-    }
-
-
-    /* RIGHT - CALL */
-
-    .floating-call{
-
-        width:62px;
-        height:62px;
-
-        border-radius:50%;
-
-        background:#087ea4;
-
-        display:flex;
-
-        align-items:center;
-        justify-content:center;
-
-        color:#fff;
-
-        font-size:32px;
-
-        box-shadow:
-            0 5px 18px rgba(0,0,0,.30);
-
-        pointer-events:auto;
-
-        transition:.2s;
-
-        border:2px solid rgba(255,255,255,.25);
-    }
-
-
-    .floating-whatsapp:active,
-    .floating-call:active{
-        transform:scale(.88);
-    }
-
-
-    footer{
-        padding-bottom:105px;
-    }
-
-}
-
 
 @media(max-width:480px){
-
-    .hero{
-        height:420px;
-    }
-
-    .hero-content h1{
-        font-size:28px;
-    }
-
-    .property-image{
-        height:240px;
-    }
-
-    .property-photo{
-        height:150px;
-    }
-
-    .floating-whatsapp,
-    .floating-call{
-        width:58px;
-        height:58px;
-    }
-
+ .hero{height:420px}
+ .property-image{height:240px}
+ .property-photo{height:150px}
+ .floating-whatsapp,.floating-call{width:58px;height:58px}
 }
-
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =======================================================
-     HEADER
-======================================================= -->
-
+<!-- HEADER -->
 <header>
+ <div class="navbar">
+  <div class="logo">
+   <img src="image/logo.jpeg" alt="Sea & Mount Travel Logo">
+   <span>SEA & MOUNT <b>TRAVEL</b></span>
+  </div>
 
-<div class="navbar">
-
-    <div class="logo">
-
-        <img
-            src="image/logo.jpeg"
-            alt="Sea & Mount Travel Logo"
-        >
-
-        <span>
-            SEA & MOUNT <b>TRAVEL</b>
-        </span>
-
-    </div>
-
-
-    <nav>
-
-        <a href="#home">Home</a>
-        <a href="#hotels">Hotels</a>
-        <a href="#homestays">Homestays</a>
-        <a href="#gallery">Room Photo</a>
-        <a href="#booking">Booking</a>
-        <a href="#contact">Contact</a>
-
-    </nav>
-
-</div>
-
+  <nav>
+   <a href="#home">Home</a>
+   <a href="#hotels">Digha Hotels</a>
+   <a href="#homestays">North Bengal Homestays</a>
+   <a href="#gallery">Room Photo</a>
+   <a href="#booking">Booking</a>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
 </header>
 
-
-<!-- =======================================================
-     HERO
-======================================================= -->
-
+<!-- HOME SLIDESHOW: NO TEXT IN THE MIDDLE -->
 <section class="hero" id="home">
-
-    <img
-        class="hero-slide"
-        src="image/home-1.jpg"
-        alt="Sea & Mount Travel"
-    >
-
-    <img
-        class="hero-slide"
-        src="image/home-2.png"
-        alt="Sea & Mount Travel"
-    >
-
-    <img
-        class="hero-slide"
-        src="image/home-3.png"
-        alt="Sea & Mount Travel"
-    >
-
-    <img
-        class="hero-slide"
-        src="image/home-4.webp"
-        alt="Sea & Mount Travel"
-    >
-
-
-    <div class="hero-overlay">
-
-        <div class="hero-content">
-
-            <h1>
-                SEA & MOUNT TRAVEL
-            </h1>
-
-            <p>
-                Hotels, Homestays & Holiday Packages
-            </p>
-
-        </div>
-
-    </div>
-
+ <img class="hero-slide" src="image/home-1.jpg" alt="Sea and Beach">
+ <img class="hero-slide" src="image/home-2.png" alt="Digha Hotel">
+ <img class="hero-slide" src="image/home-3.png" alt="North Bengal Homestay">
+ <img class="hero-slide" src="image/home-4.webp" alt="Mountain Homestay">
+ <img class="hero-slide" src="image/82.jpeg" alt="Seventh Key Homestay">
 </section>
 
-
-<!-- =======================================================
-     INTRO
-======================================================= -->
-
-<section class="intro">
-
+<!-- DIGHA HOTELS -->
+<section class="property-section" id="hotels">
 <div class="container">
 
-    <div class="section-title">
+ <div class="red-section-heading">
+  <span class="top-line">Digha</span>
+  <span class="bottom-line">Hotels</span>
+ </div>
 
-        <h2>
-            Welcome to Sea & Mount Travel
-        </h2>
+ <div class="property-grid">
 
-        <p>
-            Your trusted travel & hospitality partner
-        </p>
-
+  <!-- HOTEL PRATIMA GUEST INN -->
+  <article class="property-card">
+   <div class="property-image">
+    <div class="slideshow" onclick="openGallery('pratima')">
+     <img class="card-slide" style="--duration:18s;animation-delay:0s" src="image/1.jpg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:2s" src="image/2.jpeg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:4s" src="image/3.jpg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:6s" src="image/4.jpg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:8s" src="image/5.jpeg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:10s" src="image/6.jpeg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:12s" src="image/7.jpeg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:14s" src="image/8.jpeg" alt="Hotel Pratima Guest Inn">
+     <img class="card-slide" style="--duration:18s;animation-delay:16s" src="image/9.jpeg" alt="Hotel Pratima Guest Inn">
     </div>
+   </div>
 
+   <div class="property-content">
+    <h3>Hotel Pratima Guest Inn</h3>
+    <h4>New Digha</h4>
+    <p class="location">📍 New Digha, Digha, West Bengal 721428</p>
+    <p>Comfortable rooms for families and groups, conveniently located near Sea Beach, SBSTC Bus Stand, Railway Station and Jagannath Temple.</p>
 
-    <div class="intro-text">
-
-        <p>
-            Discover comfortable hotels and peaceful
-            homestays in Digha and North Bengal.
-            We provide quality accommodation,
-            travel assistance and customized holiday
-            experiences for our guests.
-        </p>
-
+    <div class="property-buttons">
+     <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/916290624090">WhatsApp</a>
+     <button class="btn" onclick="openGallery('pratima')">Room Photo</button>
     </div>
+   </div>
+  </article>
 
+  <!-- AARADHYA HOLIDAY INN -->
+  <article class="property-card">
+   <div class="property-image">
+    <div class="slideshow" onclick="openGallery('aaradhya')">
+     <img class="card-slide" style="--duration:30s;animation-delay:0s" src="image/22.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:2s" src="image/23.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:4s" src="image/24.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:6s" src="image/25.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:8s" src="image/26.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:10s" src="image/27.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:12s" src="image/28.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:14s" src="image/29.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:16s" src="image/30.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:18s" src="image/31.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:20s" src="image/32.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:22s" src="image/33.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:24s" src="image/34.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:26s" src="image/35.jpeg" alt="Aaradhya Holiday Inn">
+     <img class="card-slide" style="--duration:30s;animation-delay:28s" src="image/36.jpeg" alt="Aaradhya Holiday Inn">
+    </div>
+   </div>
+
+   <div class="property-content">
+    <h3>Aaradhya Holiday Inn</h3>
+    <h4>New Digha</h4>
+    <p class="location">📍 Near Helipad, Jahaj Bari, Palsandapur, Digha, West Bengal 721428</p>
+    <p>A comfortable holiday stay in New Digha, suitable for families, couples and groups.</p>
+
+    <div class="property-buttons">
+     <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/916290624090">WhatsApp</a>
+     <button class="btn" onclick="openGallery('aaradhya')">Room Photo</button>
+    </div>
+   </div>
+  </article>
+
+ </div>
 </div>
-
 </section>
 
-
-<!-- =======================================================
-     DIGHA HOTELS
-======================================================= -->
-
-<section
-    class="property-section"
-    id="hotels"
->
-
+<!-- NORTH BENGAL HOMESTAYS -->
+<section class="property-section" id="homestays">
 <div class="container">
 
+ <div class="red-section-heading">
+  <span class="top-line">North Bengal</span>
+  <span class="bottom-line">Homestays</span>
+ </div>
 
-    <div class="red-section-heading">
+ <div class="property-grid">
 
-        <span class="top-line">
-            Digha
-        </span>
-
-        <span class="bottom-line">
-            Hotels
-        </span>
-
+  <!-- SUSANTA HOMESTAY -->
+  <article class="property-card">
+   <div class="property-image">
+    <div class="slideshow" onclick="openGallery('susanta')">
+     <img class="card-slide" style="--duration:28s;animation-delay:0s" src="image/51.webp" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:2s" src="image/52.webp" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:4s" src="image/53.jpeg" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:6s" src="image/54.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:8s" src="image/55.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:10s" src="image/56.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:12s" src="image/57.jpeg" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:14s" src="image/58.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:16s" src="image/59.jpg" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:18s" src="image/60.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:20s" src="image/61.jpg" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:22s" src="image/62.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:24s" src="image/63.png" alt="Susanta Homestay">
+     <img class="card-slide" style="--duration:28s;animation-delay:26s" src="image/64.png" alt="Susanta Homestay">
     </div>
+   </div>
 
+   <div class="property-content">
+    <h3>Susanta Homestay</h3>
+    <h4>Icche Gaon</h4>
+    <p class="location">📍 Icche Gaon, Icha Forest, Kalimpong-II, West Bengal 734315</p>
+    <p>Peaceful mountain retreat surrounded by nature and beautiful Himalayan views.</p>
 
-    <div class="property-grid">
-
-
-        <!-- PRATIMA -->
-
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <div
-                    class="pratima-card-slideshow"
-                    onclick="openPratimaGallery()"
-                >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/1.jpg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/2.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/3.jpg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/4.jpg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/5.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/6.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/7.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/8.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                    <img
-                        class="pratima-card-slide"
-                        src="image/9.jpeg"
-                        alt="Hotel Pratima Guest Inn"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <div class="property-content">
-
-                <h3>
-                    Hotel Pratima Guest Inn
-                </h3>
-
-                <h4>
-                    New Digha
-                </h4>
-
-                <p class="location">
-                    📍 New Digha, Digha,
-                    West Bengal 721428
-                </p>
-
-                <p>
-                    Comfortable rooms for families and
-                    groups, conveniently located near
-                    Sea Beach, SBSTC Bus Stand,
-                    Railway Station and Jagannath Temple.
-                </p>
-
-
-                <div class="property-buttons">
-
-                    <a
-                        class="btn btn-whatsapp"
-                        href="https://wa.me/916290624090"
-                        target="_blank"
-                    >
-                        WhatsApp
-                    </a>
-
-                    <button
-                        class="btn"
-                        onclick="openPratimaGallery()"
-                    >
-                        Room Photo
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- AARADHYA -->
-
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <div
-                    class="pratima-card-slideshow"
-                    onclick="openAaradhyaGallery()"
-                >
-
-                    <img class="aaradhya-card-slide" src="image/22.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/23.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/24.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/25.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/26.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/27.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/28.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/29.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/30.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/31.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/32.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/33.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/34.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/35.jpeg" alt="Aaradhya Holiday Inn">
-                    <img class="aaradhya-card-slide" src="image/36.jpeg" alt="Aaradhya Holiday Inn">
-
-                </div>
-
-            </div>
-
-
-            <div class="property-content">
-
-                <h3>
-                    Aaradhya Holiday Inn
-                </h3>
-
-                <h4>
-                    New Digha
-                </h4>
-
-                <p class="location">
-                    📍 Near Helipad, Jahaj Bari,
-                    Palsandapur, Digha,
-                    West Bengal 721428
-                </p>
-
-                <p>
-                    A comfortable holiday stay in New
-                    Digha, suitable for families, couples
-                    and groups.
-                </p>
-
-
-                <div class="property-buttons">
-
-                    <a
-                        class="btn btn-whatsapp"
-                        href="https://wa.me/916290624090"
-                        target="_blank"
-                    >
-                        WhatsApp
-                    </a>
-
-                    <button
-                        class="btn"
-                        onclick="openAaradhyaGallery()"
-                    >
-                        Room Photo
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="property-buttons">
+     <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/916290624090">WhatsApp</a>
+     <button class="btn" onclick="openGallery('susanta')">Room Photo</button>
     </div>
+   </div>
+  </article>
 
+  <!-- TASHI / GOPERPA HOMESTAY -->
+  <article class="property-card">
+   <div class="property-image">
+    <div class="slideshow" onclick="openGallery('tashi')">
+     <img class="card-slide" style="--duration:20s;animation-delay:0s" src="image/71.jpg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:2s" src="image/72.png" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:4s" src="image/73.jpg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:6s" src="image/74.jpeg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:8s" src="image/75.png" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:10s" src="image/76.png" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:12s" src="image/77.jpg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:14s" src="image/79.jpeg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:16s" src="image/80.jpg" alt="Tashi Goperpa Homestay">
+     <img class="card-slide" style="--duration:20s;animation-delay:18s" src="image/81.jpeg" alt="Tashi Goperpa Homestay">
+    </div>
+   </div>
+
+   <div class="property-content">
+    <h3>Tashi / Goperpa Homestay</h3>
+    <h4>Icche Gaon</h4>
+    <p class="location">📍 Icche Gaon, Icha Forest, Kalimpong-II, West Bengal 734315</p>
+    <p>A peaceful homestay for guests looking for a relaxing mountain holiday.</p>
+
+    <div class="property-buttons">
+     <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/916290624090">WhatsApp</a>
+     <button class="btn" onclick="openGallery('tashi')">Room Photo</button>
+    </div>
+   </div>
+  </article>
+
+  <!-- SEVENTH KEY HOMESTAY -->
+  <article class="property-card">
+   <div class="property-image">
+    <div class="slideshow" onclick="openGallery('seventh')">
+     <img class="card-slide" style="--duration:14s;animation-delay:0s" src="image/82.jpeg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:2s" src="image/83.jpeg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:4s" src="image/84.jpeg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:6s" src="image/86.jpg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:8s" src="image/87.jpg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:10s" src="image/88.jpg" alt="Seventh Key Homestay">
+     <img class="card-slide" style="--duration:14s;animation-delay:12s" src="image/89.jpeg" alt="Seventh Key Homestay">
+    </div>
+   </div>
+
+   <div class="property-content">
+    <h3>SEVENTH KEY HOMESTAY</h3>
+    <h4>Lava – Sherpa Gaon</h4>
+    <p class="location">📍 Sherpagaon, Pankhasari Khasmahal, Near Lava, Dist: Kalimpong, West Bengal 734314</p>
+    <p>Discover the hidden beauty of Sherpa Gaon, surrounded by green hills, tea gardens, cherry blossoms, monasteries and clouds. Enjoy delicious home-cooked meals and warm hospitality.</p>
+    <p>🍽️ Breakfast, lunch, evening snacks and dinner included.</p>
+    <p>🚘 Free parking · 🚿 Geyser in every room · Vehicle access to the main entrance · Convenient for senior citizens.</p>
+    <p><strong>Nearby:</strong> Lava, Lolegaon, Jhandi, Rishop, Kolakham, Nokdara, Changi Waterfall and Neora Valley National Park.</p>
+
+    <div class="property-buttons">
+     <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/916290624090?text=Hello%2C%20I%20want%20to%20enquire%20about%20Seventh%20Key%20Homestay">WhatsApp Booking</a>
+     <button class="btn" onclick="openGallery('seventh')">Room Photo</button>
+     <a class="btn" href="seventh-key.html">View Details</a>
+    </div>
+   </div>
+  </article>
+
+ </div>
 </div>
-
 </section>
 
-
-<!-- =======================================================
-     NORTH BENGAL HOMESTAYS
-======================================================= -->
-
-<section
-    class="property-section"
-    id="homestays"
->
-
+<!-- ROOM PHOTO GALLERY -->
+<section class="gallery-section" id="gallery">
 <div class="container">
 
+ <div class="room-photo-heading">
+  <span class="room-line">Room</span>
+  <span class="photo-line">Photo</span>
+ </div>
 
-    <div class="red-section-heading">
+ <div id="galleryHome" class="gallery-home">
+  <div class="gallery-cover-grid" id="galleryCoverGrid"></div>
+ </div>
 
-        <span class="top-line">
-            North Bengal
-        </span>
+ <div id="pratimaGallery" class="property-gallery">
+  <button class="back-gallery-btn" onclick="backToGallery()">← Back to Room Photo</button>
+  <h2>Hotel Pratima Guest Inn</h2>
+  <div id="pratimaPhotoGrid" class="photo-grid"></div>
+  <div class="gallery-navigation">
+   <button onclick="previousPhoto()">← Previous</button>
+   <button onclick="nextPhoto()">Next →</button>
+  </div>
+ </div>
 
-        <span class="bottom-line">
-            Homestays
-        </span>
+ <div id="aaradhyaGallery" class="property-gallery">
+  <button class="back-gallery-btn" onclick="backToGallery()">← Back to Room Photo</button>
+  <h2>Aaradhya Holiday Inn</h2>
+  <div id="aaradhyaPhotoGrid" class="photo-grid"></div>
+  <div class="gallery-navigation">
+   <button onclick="previousAaradhyaPhoto()">← Previous</button>
+   <button onclick="nextAaradhyaPhoto()">Next →</button>
+  </div>
+ </div>
 
-    </div>
+ <div id="susantaGallery" class="property-gallery">
+  <button class="back-gallery-btn" onclick="backToGallery()">← Back to Room Photo</button>
+  <h2>Susanta Homestay</h2>
+  <div id="susantaPhotoGrid" class="photo-grid"></div>
+  <div class="gallery-navigation">
+   <button onclick="previousSusantaPhoto()">← Previous</button>
+   <button onclick="nextSusantaPhoto()">Next →</button>
+  </div>
+ </div>
 
+ <div id="tashiGallery" class="property-gallery">
+  <button class="back-gallery-btn" onclick="backToGallery()">← Back to Room Photo</button>
+  <h2>Tashi / Goperpa Homestay</h2>
+  <div id="tashiPhotoGrid" class="photo-grid"></div>
+  <div class="gallery-navigation">
+   <button onclick="previousTashiPhoto()">← Previous</button>
+   <button onclick="nextTashiPhoto()">Next →</button>
+  </div>
+ </div>
 
-    <div class="property-grid">
-
-
-        <!-- SUSANTA -->
-
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <div
-                    class="pratima-card-slideshow"
-                    onclick="openSusantaGallery()"
-                >
-
-                    <img class="susanta-card-slide" src="image/51.webp" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/52.webp" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/53.jpeg" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/54.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/55.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/56.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/57.jpeg" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/58.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/59.jpg" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/60.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/61.jpg" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/62.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/63.png" alt="Susanta Homestay">
-                    <img class="susanta-card-slide" src="image/64.png" alt="Susanta Homestay">
-
-                </div>
-
-            </div>
-
-
-            <div class="property-content">
-
-                <h3>
-                    Susanta Homestay
-                </h3>
-
-                <h4>
-                    Icche Gaon
-                </h4>
-
-                <p class="location">
-                    📍 Icche Gaon, Icha Forest,
-                    Kalimpong-II,
-                    West Bengal 734315
-                </p>
-
-                <p>
-                    Peaceful mountain retreat surrounded
-                    by nature and beautiful Himalayan views.
-                </p>
-
-
-                <div class="property-buttons">
-
-                    <a
-                        class="btn btn-whatsapp"
-                        href="https://wa.me/916290624090"
-                        target="_blank"
-                    >
-                        WhatsApp
-                    </a>
-
-                    <button
-                        class="btn"
-                        onclick="openSusantaGallery()"
-                    >
-                        Room Photo
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- TASHI / GOPERPA -->
-
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <div
-                    class="pratima-card-slideshow"
-                    onclick="openTashiGallery()"
-                >
-
-                    <img class="tashi-card-slide" src="image/71.jpg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/72.png" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/73.jpg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/74.jpeg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/75.png" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/76.png" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/77.jpg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/79.jpeg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/80.jpg" alt="Tashi Goperpa Homestay">
-                    <img class="tashi-card-slide" src="image/81.jpeg" alt="Tashi Goperpa Homestay">
-
-                </div>
-
-            </div>
-
-
-            <div class="property-content">
-
-                <h3>
-                    Tashi / Goperpa Homestay
-                </h3>
-
-                <h4>
-                    Icche Gaon
-                </h4>
-
-                <p class="location">
-                    📍 Icche Gaon, Icha Forest,
-                    Kalimpong-II,
-                    West Bengal 734315
-                </p>
-
-                <p>
-                    A peaceful homestay for guests looking
-                    for a relaxing mountain holiday.
-                </p>
-
-
-                <div class="property-buttons">
-
-                    <a
-                        class="btn btn-whatsapp"
-                        href="https://wa.me/916290624090"
-                        target="_blank"
-                    >
-                        WhatsApp
-                    </a>
-
-                    <button
-                        class="btn"
-                        onclick="openTashiGallery()"
-                    >
-                        Room Photo
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+ <div id="seventhGallery" class="property-gallery">
+  <button class="back-gallery-btn" onclick="backToGallery()">← Back to Room Photo</button>
+  <h2>SEVENTH KEY HOMESTAY – Sherpa Gaon</h2>
+  <div id="seventhPhotoGrid" class="photo-grid"></div>
+  <div class="gallery-navigation">
+   <button onclick="previousSeventhPhoto()">← Previous</button>
+   <button onclick="nextSeventhPhoto()">Next →</button>
+  </div>
+ </div>
 
 </div>
-
 </section>
 
+<!-- PHOTO LIGHTBOX -->
+<div id="photoLightbox" class="photo-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+ <div class="lightbox-content">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close photo viewer">×</button>
+  <img id="lightboxImage" src="" alt="Room Photo">
+  <div class="lightbox-nav">
+   <button onclick="previousLightboxPhoto()">← Previous</button>
+   <button onclick="nextLightboxPhoto()">Next →</button>
+  </div>
+ </div>
+</div>
 
-<!-- =======================================================
-     ROOM PHOTO
-======================================================= -->
-
-<section
-    class="gallery-section"
-    id="gallery"
->
-
+<!-- DIRECT BOOKING -->
+<section class="booking" id="booking">
 <div class="container">
-
-
-    <div class="room-photo-heading">
-
-        <span class="room-line">
-            Room
-        </span>
-
-        <span class="photo-line">
-            Photo
-        </span>
-
-    </div>
-
-
-    <!-- GALLERY HOME -->
-
-    <div
-        id="galleryHome"
-        class="gallery-home"
-    >
-
-        <div class="gallery-cover-grid">
-
-
-            <!-- PRATIMA -->
-
-            <div
-                class="gallery-cover"
-                onclick="openPratimaGallery()"
-            >
-
-                <img
-                    src="image/1.jpg"
-                    alt="Hotel Pratima Guest Inn"
-                >
-
-                <div class="gallery-cover-content">
-
-                    <h3>
-                        Hotel Pratima Guest Inn
-                    </h3>
-
-                    <p>
-                        View Room Photos
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- AARADHYA -->
-
-            <div
-                class="gallery-cover"
-                onclick="openAaradhyaGallery()"
-            >
-
-                <img
-                    src="image/22.jpeg"
-                    alt="Aaradhya Holiday Inn"
-                >
-
-                <div class="gallery-cover-content">
-
-                    <h3>
-                        Aaradhya Holiday Inn
-                    </h3>
-
-                    <p>
-                        View Room Photos
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- SUSANTA -->
-
-            <div
-                class="gallery-cover"
-                onclick="openSusantaGallery()"
-            >
-
-                <img
-                    src="image/51.webp"
-                    alt="Susanta Homestay"
-                >
-
-                <div class="gallery-cover-content">
-
-                    <h3>
-                        Susanta Homestay
-                    </h3>
-
-                    <p>
-                        View Room Photos
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- TASHI -->
-
-            <div
-                class="gallery-cover"
-                onclick="openTashiGallery()"
-            >
-
-                <img
-                    src="image/71.jpg"
-                    alt="Tashi Goperpa Homestay"
-                >
-
-                <div class="gallery-cover-content">
-
-                    <h3>
-                        Tashi / Goperpa Homestay
-                    </h3>
-
-                    <p>
-                        View Room Photos
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-    <!-- ===================================================
-         PRATIMA GALLERY
-    =================================================== -->
-
-    <div
-        id="pratimaGallery"
-        class="property-gallery"
-    >
-
-        <button
-            class="back-gallery-btn"
-            onclick="backToGallery()"
-        >
-            ← Back to Room Photo
-        </button>
-
-        <h2>
-            Hotel Pratima Guest Inn
-        </h2>
-
-        <div
-            id="pratimaPhotoGrid"
-            class="photo-grid"
-        ></div>
-
-        <div class="gallery-navigation">
-
-            <button onclick="previousPhoto()">
-                ← Previous
-            </button>
-
-            <button onclick="nextPhoto()">
-                Next →
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ===================================================
-         AARADHYA GALLERY
-    =================================================== -->
-
-    <div
-        id="aaradhyaGallery"
-        class="property-gallery"
-    >
-
-        <button
-            class="back-gallery-btn"
-            onclick="backToGallery()"
-        >
-            ← Back to Room Photo
-        </button>
-
-        <h2>
-            Aaradhya Holiday Inn
-        </h2>
-
-        <div
-            id="aaradhyaPhotoGrid"
-            class="photo-grid"
-        ></div>
-
-        <div class="gallery-navigation">
-
-            <button onclick="previousAaradhyaPhoto()">
-                ← Previous
-            </button>
-
-            <button onclick="nextAaradhyaPhoto()">
-                Next →
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ===================================================
-         SUSANTA GALLERY
-    =================================================== -->
-
-    <div
-        id="susantaGallery"
-        class="property-gallery"
-    >
-
-        <button
-            class="back-gallery-btn"
-            onclick="backToGallery()"
-        >
-            ← Back to Room Photo
-        </button>
-
-        <h2>
-            Susanta Homestay
-        </h2>
-
-        <div
-            id="susantaPhotoGrid"
-            class="photo-grid"
-        ></div>
-
-        <div class="gallery-navigation">
-
-            <button onclick="previousSusantaPhoto()">
-                ← Previous
-            </button>
-
-            <button onclick="nextSusantaPhoto()">
-                Next →
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ===================================================
-         TASHI GALLERY
-    =================================================== -->
-
-    <div
-        id="tashiGallery"
-        class="property-gallery"
-    >
-
-        <button
-            class="back-gallery-btn"
-            onclick="backToGallery()"
-        >
-            ← Back to Room Photo
-        </button>
-
-        <h2>
-            Tashi / Goperpa Homestay
-        </h2>
-
-        <div
-            id="tashiPhotoGrid"
-            class="photo-grid"
-        ></div>
-
-        <div class="gallery-navigation">
-
-            <button onclick="previousTashiPhoto()">
-                ← Previous
-            </button>
-
-            <button onclick="nextTashiPhoto()">
-                Next →
-            </button>
-
-        </div>
-
-    </div>
-
+ <h2>Direct Booking</h2>
+ <p>Contact us directly for room booking, holiday packages and travel assistance.</p>
+
+ <div class="booking-buttons">
+  <a class="btn" target="_blank" rel="noopener" href="https://wa.me/916290624090">WhatsApp: +91 62906 24090</a>
+  <a class="btn" href="tel:+919748238781">Call: +91 97482 38781</a>
+ </div>
 </div>
-
 </section>
 
-
-<!-- =======================================================
-     LIGHTBOX
-======================================================= -->
-
-<div
-    id="photoLightbox"
-    class="photo-lightbox"
->
-
-    <div class="lightbox-content">
-
-        <button
-            class="lightbox-close"
-            onclick="closeLightbox()"
-        >
-            ×
-        </button>
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Room Photo"
-        >
-
-        <div class="lightbox-nav">
-
-            <button onclick="previousLightboxPhoto()">
-                ← Previous
-            </button>
-
-            <button onclick="nextLightboxPhoto()">
-                Next →
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- =======================================================
-     DIRECT BOOKING
-======================================================= -->
-
-<section
-    class="booking"
-    id="booking"
->
-
+<!-- CONTACT -->
+<section class="contact" id="contact">
 <div class="container">
+ <div class="section-title">
+  <h2>Contact Us</h2>
+  <p>Sea & Mount Travel</p>
+ </div>
 
-    <h2>
-        Direct Booking
-    </h2>
+ <div class="contact-grid">
+  <div class="contact-box">
+   <h3>WhatsApp</h3>
+   <p>+91 62906 24090</p>
+  </div>
 
-    <p>
-        Contact us directly for room booking,
-        holiday packages and travel assistance.
-    </p>
+  <div class="contact-box">
+   <h3>Phone</h3>
+   <p>+91 97482 38781</p>
+   <p>+91 82405 11881</p>
+  </div>
 
-
-    <div class="booking-buttons">
-
-        <a
-            class="btn"
-            href="https://wa.me/916290624090"
-            target="_blank"
-        >
-            WhatsApp: +91 62906 24090
-        </a>
-
-        <a
-            class="btn"
-            href="tel:+919748238781"
-        >
-            Call: +91 97482 38781
-        </a>
-
-    </div>
-
+  <div class="contact-box">
+   <h3>Email</h3>
+   <p>admin@seamount.co.in</p>
+  </div>
+ </div>
 </div>
-
 </section>
 
-
-<!-- =======================================================
-     CONTACT
-======================================================= -->
-
-<section
-    class="contact"
-    id="contact"
->
-
-<div class="container">
-
-    <div class="section-title">
-
-        <h2>
-            Contact Us
-        </h2>
-
-        <p>
-            Sea & Mount Travel
-        </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-
-        <div class="contact-box">
-
-            <h3>
-                WhatsApp
-            </h3>
-
-            <p>
-                +91 62906 24090
-            </p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <h3>
-                Phone
-            </h3>
-
-            <p>
-                +91 97482 38781
-            </p>
-
-            <p>
-                +91 82405 11881
-            </p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <h3>
-                Email
-            </h3>
-
-            <p>
-                admin@seamount.co.in
-            </p>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =======================================================
-     FOOTER
-======================================================= -->
-
+<!-- FOOTER -->
 <footer>
-
-    <p>
-        © 2026 Sea & Mount Travel.
-        All Rights Reserved.
-    </p>
-
-    <p>
-        Hotels • Homestays • Holiday Packages
-    </p>
-
+ <p>© 2026 Sea & Mount Travel. All Rights Reserved.</p>
+ <p>Hotels • Homestays • Holiday Packages</p>
 </footer>
 
-
-<!-- =======================================================
-     MOBILE FIXED BUTTONS
-======================================================= -->
-
+<!-- MOBILE FLOATING BUTTONS -->
 <div class="mobile-contact-buttons">
+ <a class="floating-whatsapp" href="https://wa.me/916290624090" target="_blank" rel="noopener" aria-label="WhatsApp Sea and Mount Travel">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372.074-.57.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.347-.57-.347"/>
+   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.55 4.112 1.514 5.824L.057 24l6.338-1.66A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0Zm0 22.1c-1.88 0-3.722-.504-5.342-1.459l-.382-.225-3.762.985 1.003-3.666-.249-.394A9.95 9.95 0 0 1 2.05 12C2.05 6.515 6.515 2.05 12 2.05S21.95 6.515 21.95 12 17.485 21.95 12 21.95Z"/>
+  </svg>
+ </a>
 
-
-    <!-- LEFT WHATSAPP -->
-
-    <a
-        class="floating-whatsapp"
-        href="https://wa.me/916290624090"
-        target="_blank"
-        aria-label="WhatsApp Sea and Mount Travel"
-    >
-
-        <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="white"
-        >
-
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372.074-.57.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
-
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.55 4.112 1.514 5.824L.057 24l6.338-1.66A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0Zm0 22.1c-1.88 0-3.722-.504-5.342-1.459l-.382-.225-3.762.985 1.003-3.666-.249-.394A9.95 9.95 0 0 1 2.05 12C2.05 6.515 6.515 2.05 12 2.05S21.95 6.515 21.95 12 17.485 21.95 12 21.95Z"/>
-
-        </svg>
-
-    </a>
-
-
-    <!-- RIGHT CALL -->
-
-    <a
-        class="floating-call"
-        href="tel:+919748238781"
-        aria-label="Call Sea and Mount Travel"
-    >
-        ☎
-    </a>
-
+ <a class="floating-call" href="tel:+919748238781" aria-label="Call Sea and Mount Travel">☎</a>
 </div>
 
-
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
-
 <script>
+const galleries = {
+ pratima:{
+  title:"Hotel Pratima Guest Inn",
+  photos:["1.jpg","2.jpeg","3.jpg","4.jpg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg"],
+  grid:"pratimaPhotoGrid",
+  section:"pratimaGallery"
+ },
 
-/* =========================================================
-   PHOTO ARRAYS
-========================================================= */
+ aaradhya:{
+  title:"Aaradhya Holiday Inn",
+  photos:["22.jpeg","23.jpeg","24.jpeg","25.jpeg","26.jpeg","27.jpeg","28.jpeg","29.jpeg","30.jpeg","31.jpeg","32.jpeg","33.jpeg","34.jpeg","35.jpeg","36.jpeg"],
+  grid:"aaradhyaPhotoGrid",
+  section:"aaradhyaGallery"
+ },
 
-const pratimaPhotos = [
-    "1.jpg",
-    "2.jpeg",
-    "3.jpg",
-    "4.jpg",
-    "5.jpeg",
-    "6.jpeg",
-    "7.jpeg",
-    "8.jpeg",
-    "9.jpeg"
-];
+ susanta:{
+  title:"Susanta Homestay",
+  photos:["51.webp","52.webp","53.jpeg","54.png","55.png","56.png","57.jpeg","58.png","59.jpg","60.png","61.jpg","62.png","63.png","64.png"],
+  grid:"susantaPhotoGrid",
+  section:"susantaGallery"
+ },
 
+ tashi:{
+  title:"Tashi / Goperpa Homestay",
+  photos:["71.jpg","72.png","73.jpg","74.jpeg","75.png","76.png","77.jpg","79.jpeg","80.jpg","81.jpeg"],
+  grid:"tashiPhotoGrid",
+  section:"tashiGallery"
+ },
 
-const aaradhyaPhotos = [
-    "22.jpeg",
-    "23.jpeg",
-    "24.jpeg",
-    "25.jpeg",
-    "26.jpeg",
-    "27.jpeg",
-    "28.jpeg",
-    "29.jpeg",
-    "30.jpeg",
-    "31.jpeg",
-    "32.jpeg",
-    "33.jpeg",
-    "34.jpeg",
-    "35.jpeg",
-    "36.jpeg"
-];
+ seventh:{
+  title:"SEVENTH KEY HOMESTAY – Sherpa Gaon",
+  photos:["82.jpeg","83.jpeg","84.jpeg","86.jpg","87.jpg","88.jpg","89.jpeg"],
+  grid:"seventhPhotoGrid",
+  section:"seventhGallery"
+ }
+};
 
+let currentGalleryType="pratima";
 
-const susantaPhotos = [
-    "51.webp",
-    "52.webp",
-    "53.jpeg",
-    "54.png",
-    "55.png",
-    "56.png",
-    "57.jpeg",
-    "58.png",
-    "59.jpg",
-    "60.png",
-    "61.jpg",
-    "62.png",
-    "63.png",
-    "64.png"
-];
+const currentIndexes={
+ pratima:0,
+ aaradhya:0,
+ susanta:0,
+ tashi:0,
+ seventh:0
+};
 
+function buildGalleryCovers(){
+ const grid=document.getElementById("galleryCoverGrid");
 
-const tashiPhotos = [
-    "71.jpg",
-    "72.png",
-    "73.jpg",
-    "74.jpeg",
-    "75.png",
-    "76.png",
-    "77.jpg",
-    "79.jpeg",
-    "80.jpg",
-    "81.jpeg"
-];
+ Object.keys(galleries).forEach(function(key){
+  const g=galleries[key];
+  const cover=document.createElement("div");
 
+  cover.className="gallery-cover";
+  cover.onclick=function(){openGallery(key)};
 
-/* =========================================================
-   CURRENT PHOTO
-========================================================= */
+  const img=document.createElement("img");
+  img.src="image/"+g.photos[0];
+  img.alt=g.title;
 
-let currentPhoto = 0;
-let currentAaradhyaPhoto = 0;
-let currentSusantaPhoto = 0;
-let currentTashiPhoto = 0;
+  const content=document.createElement("div");
+  content.className="gallery-cover-content";
 
-let currentGalleryType = "pratima";
+  const h3=document.createElement("h3");
+  h3.textContent=g.title;
 
+  const p=document.createElement("p");
+  p.textContent="View Room Photos";
 
-/* =========================================================
-   HIDE ALL GALLERIES
-========================================================= */
+  content.append(h3,p);
+  cover.append(img,content);
+  grid.appendChild(cover);
+ });
+}
 
 function hideAllGalleries(){
+ document.getElementById("galleryHome").style.display="none";
 
-    document.getElementById("galleryHome").style.display="none";
-
-    document
-        .getElementById("pratimaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("aaradhyaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("susantaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("tashiGallery")
-        .classList.remove("active");
+ Object.values(galleries).forEach(g=>{
+  document.getElementById(g.section).classList.remove("active");
+ });
 }
-
-
-/* =========================================================
-   SCROLL TO GALLERY
-========================================================= */
 
 function scrollToGallery(){
-
-    document
-        .getElementById("gallery")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
+ document.getElementById("gallery").scrollIntoView({behavior:"smooth"});
 }
 
+function openGallery(key){
+ if(!galleries[key])return;
 
-/* =========================================================
-   PRATIMA
-========================================================= */
+ hideAllGalleries();
+ currentGalleryType=key;
 
-function openPratimaGallery(){
+ document.getElementById(galleries[key].section).classList.add("active");
 
-    hideAllGalleries();
-
-    document
-        .getElementById("pratimaGallery")
-        .classList.add("active");
-
-    currentGalleryType="pratima";
-
-    showPratimaPhotos();
-
-    scrollToGallery();
+ showPhotos(key);
+ scrollToGallery();
 }
 
+function showPhotos(key){
+ const g=galleries[key];
+ const grid=document.getElementById(g.grid);
 
-function showPratimaPhotos(){
+ grid.innerHTML="";
 
-    const grid =
-        document.getElementById("pratimaPhotoGrid");
+ g.photos.forEach(function(photo,index){
+  const img=document.createElement("img");
 
-    grid.innerHTML="";
+  img.className="property-photo";
+  img.src="image/"+photo;
+  img.alt=g.title+" Photo "+(index+1);
+  img.loading="lazy";
+  img.onclick=function(){openLightbox(key,index)};
 
-    pratimaPhotos.forEach(function(photo,index){
-
-        const img =
-            document.createElement("img");
-
-        img.className="property-photo";
-
-        img.src="image/"+photo;
-
-        img.alt=
-            "Hotel Pratima Guest Inn Photo "+
-            (index+1);
-
-        img.onclick=function(){
-
-            openPratimaLightbox(index);
-
-        };
-
-        grid.appendChild(img);
-
-    });
+  grid.appendChild(img);
+ });
 }
 
+function openLightbox(key,index){
+ currentGalleryType=key;
+ currentIndexes[key]=index;
 
-function openPratimaLightbox(index){
+ document.getElementById("lightboxImage").src="image/"+galleries[key].photos[index];
+ document.getElementById("lightboxImage").alt=galleries[key].title+" photo "+(index+1);
 
-    currentGalleryType="pratima";
-
-    currentPhoto=index;
-
-    document
-        .getElementById("lightboxImage")
-        .src=
-        "image/"+pratimaPhotos[currentPhoto];
-
-    document
-        .getElementById("photoLightbox")
-        .classList.add("active");
+ document.getElementById("photoLightbox").classList.add("active");
 }
 
+function movePhoto(direction){
+ const photos=galleries[currentGalleryType].photos;
+
+ currentIndexes[currentGalleryType]=
+  (currentIndexes[currentGalleryType]+direction+photos.length)%photos.length;
+
+ openLightbox(currentGalleryType,currentIndexes[currentGalleryType]);
+}
+
+function previousLightboxPhoto(){movePhoto(-1)}
+function nextLightboxPhoto(){movePhoto(1)}
 
 function previousPhoto(){
-
-    currentPhoto--;
-
-    if(currentPhoto<0){
-
-        currentPhoto=
-            pratimaPhotos.length-1;
-    }
-
-    openPratimaLightbox(currentPhoto);
+ if(currentGalleryType!=="pratima")currentGalleryType="pratima";
+ movePhoto(-1);
 }
-
 
 function nextPhoto(){
-
-    currentPhoto++;
-
-    if(
-        currentPhoto>=
-        pratimaPhotos.length
-    ){
-
-        currentPhoto=0;
-    }
-
-    openPratimaLightbox(currentPhoto);
+ if(currentGalleryType!=="pratima")currentGalleryType="pratima";
+ movePhoto(1);
 }
-
-
-/* =========================================================
-   AARADHYA
-========================================================= */
-
-function openAaradhyaGallery(){
-
-    hideAllGalleries();
-
-    document
-        .getElementById("aaradhyaGallery")
-        .classList.add("active");
-
-    currentGalleryType="aaradhya";
-
-    showAaradhyaPhotos();
-
-    scrollToGallery();
-}
-
-
-function showAaradhyaPhotos(){
-
-    const grid =
-        document.getElementById("aaradhyaPhotoGrid");
-
-    grid.innerHTML="";
-
-    aaradhyaPhotos.forEach(function(photo,index){
-
-        const img =
-            document.createElement("img");
-
-        img.className="property-photo";
-
-        img.src="image/"+photo;
-
-        img.alt=
-            "Aaradhya Holiday Inn Photo "+
-            (index+1);
-
-        img.onclick=function(){
-
-            openAaradhyaLightbox(index);
-
-        };
-
-        grid.appendChild(img);
-
-    });
-}
-
-
-function openAaradhyaLightbox(index){
-
-    currentGalleryType="aaradhya";
-
-    currentAaradhyaPhoto=index;
-
-    document
-        .getElementById("lightboxImage")
-        .src=
-        "image/"+
-        aaradhyaPhotos[currentAaradhyaPhoto];
-
-    document
-        .getElementById("photoLightbox")
-        .classList.add("active");
-}
-
 
 function previousAaradhyaPhoto(){
-
-    currentAaradhyaPhoto--;
-
-    if(currentAaradhyaPhoto<0){
-
-        currentAaradhyaPhoto=
-            aaradhyaPhotos.length-1;
-    }
-
-    openAaradhyaLightbox(
-        currentAaradhyaPhoto
-    );
+ currentGalleryType="aaradhya";
+ movePhoto(-1);
 }
-
 
 function nextAaradhyaPhoto(){
-
-    currentAaradhyaPhoto++;
-
-    if(
-        currentAaradhyaPhoto>=
-        aaradhyaPhotos.length
-    ){
-
-        currentAaradhyaPhoto=0;
-    }
-
-    openAaradhyaLightbox(
-        currentAaradhyaPhoto
-    );
+ currentGalleryType="aaradhya";
+ movePhoto(1);
 }
-
-
-/* =========================================================
-   SUSANTA
-========================================================= */
-
-function openSusantaGallery(){
-
-    hideAllGalleries();
-
-    document
-        .getElementById("susantaGallery")
-        .classList.add("active");
-
-    currentGalleryType="susanta";
-
-    showSusantaPhotos();
-
-    scrollToGallery();
-}
-
-
-function showSusantaPhotos(){
-
-    const grid =
-        document.getElementById("susantaPhotoGrid");
-
-    grid.innerHTML="";
-
-    susantaPhotos.forEach(function(photo,index){
-
-        const img =
-            document.createElement("img");
-
-        img.className="property-photo";
-
-        img.src="image/"+photo;
-
-        img.alt=
-            "Susanta Homestay Photo "+
-            (index+1);
-
-        img.onclick=function(){
-
-            openSusantaLightbox(index);
-
-        };
-
-        grid.appendChild(img);
-
-    });
-}
-
-
-function openSusantaLightbox(index){
-
-    currentGalleryType="susanta";
-
-    currentSusantaPhoto=index;
-
-    document
-        .getElementById("lightboxImage")
-        .src=
-        "image/"+
-        susantaPhotos[currentSusantaPhoto];
-
-    document
-        .getElementById("photoLightbox")
-        .classList.add("active");
-}
-
 
 function previousSusantaPhoto(){
-
-    currentSusantaPhoto--;
-
-    if(currentSusantaPhoto<0){
-
-        currentSusantaPhoto=
-            susantaPhotos.length-1;
-    }
-
-    openSusantaLightbox(
-        currentSusantaPhoto
-    );
+ currentGalleryType="susanta";
+ movePhoto(-1);
 }
-
 
 function nextSusantaPhoto(){
-
-    currentSusantaPhoto++;
-
-    if(
-        currentSusantaPhoto>=
-        susantaPhotos.length
-    ){
-
-        currentSusantaPhoto=0;
-    }
-
-    openSusantaLightbox(
-        currentSusantaPhoto
-    );
+ currentGalleryType="susanta";
+ movePhoto(1);
 }
-
-
-/* =========================================================
-   TASHI
-========================================================= */
-
-function openTashiGallery(){
-
-    hideAllGalleries();
-
-    document
-        .getElementById("tashiGallery")
-        .classList.add("active");
-
-    currentGalleryType="tashi";
-
-    showTashiPhotos();
-
-    scrollToGallery();
-}
-
-
-function showTashiPhotos(){
-
-    const grid =
-        document.getElementById("tashiPhotoGrid");
-
-    grid.innerHTML="";
-
-    tashiPhotos.forEach(function(photo,index){
-
-        const img =
-            document.createElement("img");
-
-        img.className="property-photo";
-
-        img.src="image/"+photo;
-
-        img.alt=
-            "Tashi Goperpa Homestay Photo "+
-            (index+1);
-
-        img.onclick=function(){
-
-            openTashiLightbox(index);
-
-        };
-
-        grid.appendChild(img);
-
-    });
-}
-
-
-function openTashiLightbox(index){
-
-    currentGalleryType="tashi";
-
-    currentTashiPhoto=index;
-
-    document
-        .getElementById("lightboxImage")
-        .src=
-        "image/"+
-        tashiPhotos[currentTashiPhoto];
-
-    document
-        .getElementById("photoLightbox")
-        .classList.add("active");
-}
-
 
 function previousTashiPhoto(){
-
-    currentTashiPhoto--;
-
-    if(currentTashiPhoto<0){
-
-        currentTashiPhoto=
-            tashiPhotos.length-1;
-    }
-
-    openTashiLightbox(
-        currentTashiPhoto
-    );
+ currentGalleryType="tashi";
+ movePhoto(-1);
 }
-
 
 function nextTashiPhoto(){
-
-    currentTashiPhoto++;
-
-    if(
-        currentTashiPhoto>=
-        tashiPhotos.length
-    ){
-
-        currentTashiPhoto=0;
-    }
-
-    openTashiLightbox(
-        currentTashiPhoto
-    );
+ currentGalleryType="tashi";
+ movePhoto(1);
 }
 
+function previousSeventhPhoto(){
+ currentGalleryType="seventh";
+ movePhoto(-1);
+}
 
-/* =========================================================
-   BACK TO ROOM PHOTO
-========================================================= */
+function nextSeventhPhoto(){
+ currentGalleryType="seventh";
+ movePhoto(1);
+}
 
 function backToGallery(){
+ Object.values(galleries).forEach(g=>{
+  document.getElementById(g.section).classList.remove("active");
+ });
 
-    document
-        .getElementById("pratimaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("aaradhyaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("susantaGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("tashiGallery")
-        .classList.remove("active");
-
-    document
-        .getElementById("galleryHome")
-        .style.display="block";
-
-    scrollToGallery();
+ document.getElementById("galleryHome").style.display="block";
+ scrollToGallery();
 }
-
-
-/* =========================================================
-   LIGHTBOX PREVIOUS
-========================================================= */
-
-function previousLightboxPhoto(){
-
-    if(currentGalleryType==="pratima"){
-
-        previousPhoto();
-
-    }
-    else if(currentGalleryType==="aaradhya"){
-
-        previousAaradhyaPhoto();
-
-    }
-    else if(currentGalleryType==="susanta"){
-
-        previousSusantaPhoto();
-
-    }
-    else if(currentGalleryType==="tashi"){
-
-        previousTashiPhoto();
-
-    }
-}
-
-
-/* =========================================================
-   LIGHTBOX NEXT
-========================================================= */
-
-function nextLightboxPhoto(){
-
-    if(currentGalleryType==="pratima"){
-
-        nextPhoto();
-
-    }
-    else if(currentGalleryType==="aaradhya"){
-
-        nextAaradhyaPhoto();
-
-    }
-    else if(currentGalleryType==="susanta"){
-
-        nextSusantaPhoto();
-
-    }
-    else if(currentGalleryType==="tashi"){
-
-        nextTashiPhoto();
-
-    }
-}
-
-
-/* =========================================================
-   CLOSE LIGHTBOX
-========================================================= */
 
 function closeLightbox(){
-
-    document
-        .getElementById("photoLightbox")
-        .classList.remove("active");
+ document.getElementById("photoLightbox").classList.remove("active");
 }
 
+document.addEventListener("keydown",function(event){
+ if(event.key==="Escape")closeLightbox();
 
-/* =========================================================
-   KEYBOARD
-========================================================= */
+ if(event.key==="ArrowRight"&&document.getElementById("photoLightbox").classList.contains("active")){
+  nextLightboxPhoto();
+ }
 
-document.addEventListener(
-    "keydown",
-    function(event){
+ if(event.key==="ArrowLeft"&&document.getElementById("photoLightbox").classList.contains("active")){
+  previousLightboxPhoto();
+ }
+});
 
-        if(event.key==="Escape"){
+document.getElementById("photoLightbox").addEventListener("click",function(event){
+ if(event.target===this)closeLightbox();
+});
 
-            closeLightbox();
-
-        }
-
-        if(event.key==="ArrowRight"){
-
-            nextLightboxPhoto();
-
-        }
-
-        if(event.key==="ArrowLeft"){
-
-            previousLightboxPhoto();
-
-        }
-
-    }
-);
-
-
-/* =========================================================
-   CLICK OUTSIDE LIGHTBOX
-========================================================= */
-
-document
-    .getElementById("photoLightbox")
-    .addEventListener(
-        "click",
-        function(event){
-
-            if(event.target===this){
-
-                closeLightbox();
-
-            }
-
-        }
-    );
-
+buildGalleryCovers();
 </script>
 
 </body>
